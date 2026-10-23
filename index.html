@@ -2429,5 +2429,27 @@ window.__auth={cur:function(){return cur},persist:persist,cloud:function(){retur
  });
 })();
 </script>
+<script>
+/* ربط أزرار شريط التنقل السفلي (#pnav) بالشاشات */
+(function(){
+ var nav=document.getElementById('pnav');if(!nav)return;
+ function syncNav(){
+  var checked=document.querySelector('input[name="scr"]:checked');if(!checked)return;
+  var n=checked.id.slice(1);
+  [].forEach.call(nav.querySelectorAll('button'),function(b){b.classList.toggle('on',b.dataset.n===n)});
+ }
+ function goTo(n){
+  var r=document.getElementById('k'+n);if(!r)return;
+  r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}));
+  window.scrollTo({top:0,behavior:'smooth'});
+ }
+ nav.addEventListener('click',function(e){
+  var b=e.target.closest('button[data-n]');if(!b)return;
+  goTo(b.dataset.n);
+ });
+ document.addEventListener('change',function(e){if(e.target&&e.target.name==='scr')syncNav()},true);
+ syncNav();
+})();
+</script>
 </body>
 </html>
