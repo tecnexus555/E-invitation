@@ -1069,6 +1069,7 @@ body{background:#05060a;margin:0;padding:0;overflow-x:hidden}
 /* الهاتف: مساحة أسفل المحتوى حتى لا يغطيه شريط التنقل */
 @media(max-width:699px){#stage>section.fr:last-of-type{margin-bottom:0}}
 </style>
+<style id="editor-timer">.e5-tc{display:inline-flex;align-items:center;font-variant-numeric:tabular-nums;font-size:12px;color:var(--gold);background:var(--ink2);border:1px solid var(--line);border-radius:8px;padding:4px 8px;white-space:nowrap;min-width:92px;justify-content:center}</style>
 </head>
 <body>
 
@@ -1210,6 +1211,7 @@ body{background:#05060a;margin:0;padding:0;overflow-x:hidden}
   <button class="e5-pill" id="e5-undo" title="تراجع"><svg class="i"><use href="#ic-undo"/></svg></button>
   <button class="e5-pill" id="e5-redo" title="إعادة"><svg class="i"><use href="#ic-redo"/></svg></button>
   <button class="e5-pill pl" id="e5-play" title="تشغيل"><svg class="i f"><use href="#ic-play"/></svg></button>
+  <span class="e5-tc" id="e5-tc" dir="ltr" title="الوقت الحالي / مدة الدعوة">00:00 / 00:20</span>
   <span class="sp"></span>
   <div class="e5-dev"><button id="e5-land" class="on" title="عرضي"><svg class="i"><use href="#ic-land"/></svg></button><button id="e5-port" title="طولي"><svg class="i"><use href="#ic-port"/></svg></button></div>
   <span class="sp"></span>
@@ -1975,7 +1977,9 @@ $('#e5-bt').onclick=function(e){var b=e.target.closest('[data-b]');if(!b)return;
 })();
 /* ---------- timeline ---------- */
 var ph=$('#e5-ph'),tk=$('#e5-tk'),pos=44,playing=false,raf=0,lastT=0;
-function setPh(v){pos=Math.max(0,Math.min(100,v));ph.style.left=pos+'%'}
+function fmtT(sec){sec=Math.max(0,Math.round(sec));var m=Math.floor(sec/60),x=sec%60;return (m<10?'0':'')+m+':'+(x<10?'0':'')+x}
+var E5DUR=20;
+function setPh(v){pos=Math.max(0,Math.min(100,v));ph.style.left=pos+'%';var tc=document.getElementById('e5-tc');if(tc)tc.textContent=fmtT(pos/100*E5DUR)+' / '+fmtT(E5DUR)}
 function tkRect(){var r=$('#e5-rul').getBoundingClientRect();return r}
 function setPlay(on){playing=on;
  var ic=on?'#ic-pause':'#ic-play';
