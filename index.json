@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "frame_round",
+      "name": "إطار دائري",
+      "category": "frames",
+      "file": "frame_round.svg",
+      "width": 400,
+      "height": 400,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "frame_arch",
+      "name": "إطار قوسي",
+      "category": "frames",
+      "file": "frame_arch.svg",
+      "width": 400,
+      "height": 560,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "frame_square_corners",
+      "name": "إطار بزوايا زخرفية",
+      "category": "frames",
+      "file": "frame_square_corners.svg",
+      "width": 400,
+      "height": 400,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "ornament_rosette",
+      "name": "وردة ثمانية",
+      "category": "ornaments",
+      "file": "ornament_rosette.svg",
+      "width": 160,
+      "height": 160,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "ornament_star8",
+      "name": "نجمة ثمانية",
+      "category": "ornaments",
+      "file": "ornament_star8.svg",
+      "width": 160,
+      "height": 160,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "ornament_lantern",
+      "name": "فانوس",
+      "category": "ornaments",
+      "file": "ornament_lantern.svg",
+      "width": 160,
+      "height": 160,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "ornament_crescent",
+      "name": "هلال ونجمة",
+      "category": "ornaments",
+      "file": "ornament_crescent.svg",
+      "width": 160,
+      "height": 160,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "ornament_arabesque",
+      "name": "أرابيسك",
+      "category": "ornaments",
+      "file": "ornament_arabesque.svg",
+      "width": 160,
+      "height": 160,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "divider_diamond",
+      "name": "فاصل بالماسة",
+      "category": "dividers",
+      "file": "divider_diamond.svg",
+      "width": 600,
+      "height": 60,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "divider_hearts",
+      "name": "فاصل بالقلوب",
+      "category": "dividers",
+      "file": "divider_hearts.svg",
+      "width": 600,
+      "height": 60,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "icon_rings",
+      "name": "حلقتان",
+      "category": "icons",
+      "file": "icon_rings.svg",
+      "width": 200,
+      "height": 200,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "icon_dove",
+      "name": "حمامة",
+      "category": "icons",
+      "file": "icon_dove.svg",
+      "width": 200,
+      "height": 200,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "icon_heart_line",
+      "name": "قلب بخط",
+      "category": "icons",
+      "file": "icon_heart_line.svg",
+      "width": 200,
+      "height": 200,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "icon_dates_branch",
+      "name": "غصن",
+      "category": "icons",
+      "file": "icon_dates_branch.svg",
+      "width": 200,
+      "height": 200,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    },
+    {
+      "id": "icon_olive",
+      "name": "غصن زيتون",
+      "category": "icons",
+      "file": "icon_olive.svg",
+      "width": 200,
+      "height": 200,
+      "license": "original",
+      "author": "دعوات إلكترونية"
+    }
+  ]
+}

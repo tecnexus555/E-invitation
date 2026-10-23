@@ -1,18 +1,14 @@
 {
-  "name": "دعوات زفاف",
-  "short_name": "دعوات زفاف",
-  "description": "مصمم دعواتك بطابع ليبي",
-  "lang": "ar",
-  "dir": "rtl",
-  "start_url": "./index.html",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#0F1016",
-  "theme_color": "#0F1016",
-  "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
-  ]
+ "name":"دعوات إلكترونية",
+ "short_name":"دعوات إلكترونية",
+ "description":"تصميم دعوات الزفاف بطابع ليبي",
+ "lang":"ar","dir":"rtl",
+ "start_url":"./index.html","scope":"./","id":"./index.html",
+ "display":"standalone","orientation":"portrait",
+ "background_color":"#0F1016","theme_color":"#0F1016",
+ "icons":[
+  {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+  {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+  {"src":"icons/maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+ ]
 }
